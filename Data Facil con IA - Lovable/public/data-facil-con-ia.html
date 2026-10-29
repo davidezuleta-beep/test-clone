@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#083B42">
+  <meta name="description" content="Aprende análisis de datos con IA resolviendo seis misiones prácticas. Data Fácil con IA, una experiencia con el color de Biniac.">
+  <title>Data Fácil con IA · Aprende haciendo</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iM...">
+  <style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap');
+:root{--ink:#083b42;--deep:#052f36;--cyan:#1ff0f0;--paper:#f7faf8;--muted:#607b7d;--line:#dce7e3;--soft:#eaf4f0;--white:#fff;--good:#13735e;--bad:#a3482e;--amber:#a56b14;--radius:14px;font-family:'DM Sans','Segoe UI',sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #079da4;outline-offset:4px}svg{vertical-align:middle}button svg,a svg{pointer-events:none}h1,h2,h3,h4,p{margin-top:0}.brand{font-family:'Manrope','Segoe UI',sans-serif;font-size:34px;line-height:1.25;letter-spacing:-1.3px;font-weight:750}.brand small{font-size:10px;letter-spacing:3px;display:block;margin-top:4px}.skip-link{position:fixed;top:-80px;left:20px;z-index:50;background:var(--cyan);padding:14px}.skip-link:focus{top:10px}.
+.shell{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--deep);color:white;padding:35px 22px 22px;position:fixed;top:0;bottom:0;width:232px;display:flex;flex-direction:column;z-index:20}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:white}.brand-symbol{width:36px;height:40px;display:grid;grid-template-columns:repeat(3,5px);gap:4px;align-items:end;padding:9px 4px}.brand-symbol i{display:block;height:14px;background:var(--cyan);border-radius:2px}.brand-symbol i:nth-child(2){height:26px}.brand-symbol i:nth-child(3){height:18px}.brand small{color:var(--cyan)}.sidebar-tag{font-size:9px;letter-spacing:2px;color:#9ebaba;margin:34px 10px 13px}.navigation{display:flex;flex-direction:column;gap:5px}.nav-item{display:flex;align-items:center;gap:12px;min-height:46px;padding:12px 12px;border:0;background:none;color:#b1c7c7;border-radius:8px;text-decoration:none;text-align:left;font-size:12px;font-weight:500}.nav-item.active{background:#17474c;color:var(--cyan)}.nav-item:hover{background:#17474c;color:white}.nav-item .end{margin-left:auto;opacity:.6}.sidebar-course{border:1px solid #3c5e61;border-radius:10px;margin-top:36px;padding:17px 14px}.sidebar-course .row{font-size:11px;display:flex;justify-content:space-between;margin-top:13px}.progress-track{height:4px;background:#31595d;border-radius:4px;overflow:hidden}.progress-track span{display:block;height:100%;background:var(--cyan);transition:width .5s}.sidebar-course p{font-size:10px;color:#b1c7c7;margin:0}.sidebar-bottom{margin-top:auto;padding-top:25px;border-top:1px solid #345458}.brand-footer{display:flex;align-items:center;gap:8px;color:#9ebaba}.brand-footer small{font-size:9px;color:#9ebaba}.brand-footer img{width:75px;filter:brightness(0) invert(1);opacity:.8}.main-wrap{grid-column:2;min-width:0}.topbar{height:84px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:#f7faf8}.breadcrumb{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:9px}.breadcrumb span{color:var(--ink)}.top-profile{display:flex;align-items:center;gap:13px}.xp-chip{font-size:12px;font-weight:650;display:flex;align-items:center;gap:7px;color:#426a70}.xp-chip svg{color:#087f8f}.profile-bt{display:flex;align-items:center;gap:9px;border:0;background:none;padding:0;font-size:11px;color:var(--ink)}.avatar{display:grid;place-items:center;width:34px;height:34px;background:#e3efea;border:1px solid #c9dfd7;border-radius:50%;font-size:11px;font-weight:650}.profile-copy{text-align:left;line-height:1.4}.profile-copy small{display:block;font-size:9px;color:var(--muted)}.content{max-width:1440px;margin:0 auto;padding:33px 40px 35px}.page-intro{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:25px}.page-intro h1{font-size:29px;line-height:1.25;letter-spacing:-1.3px;margin:0}.page-intro p{font-size:12px;color:var(--muted);margin:0}.chapter-pill{border:1px solid var(--line);font-size:10px;border-radius:5px;padding:8px 11px;white-space:nowrap;display:flex;align-items:center;gap:7px}.chapter-pill i{width:6px;height:6px;background:#2b9892;border-radius:50%}.hero{display:grid;grid-template-columns:1.15fr 1fr;background:var(--ink);color:white;min-height:280px;border-radius:var(--radius);overflow:hidden;position:relative}.hero-copy{padding:35px 42px;position:relative;z-index:1}.hero-copy .eyebrow{color:var(--cyan);font-size:9px;letter-spacing:2px;display:inline-flex;align-items:center;gap:8px}.hero-copy .eyebrow:before{content:'';width:17px;height:1px;background:var(--cyan)}.hero h2{font-family:'Manrope','Segoe UI',sans-serif;font-size:42px;line-height:1.15;letter-spacing:-1.4px;margin:14px 0 12px}.hero p{font-size:13px;color:#b5cecd;line-height:1.65;max-width:600px;margin:0}.hero-note{display:inline-flex;align-items:center;gap:6px;font-size:9px;color:#b5cecd;margin-top:18px}.hero-note svg{color:var(--cyan)}.hero-visual{position:relative;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background-image:radial-gradient(#d8fff1 1px,transparent 1px);background-size:19px 19px}.hero-visual:before,.hero-visual:after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;border:1px solid #8ab5b32b}.hero-visual:before{width:300px;height:300px;left:50%;top:50%;transform:translate(-50%,-50%)}.hero-visual:after{width:210px;height:210px;left:50%;top:50%;transform:translate(-50%,-50%)}.data-canvas{width:290px;position:relative;z-index:2;transform:rotate(-5deg);background:#f8fffc;border:1px solid #c4d9d5;border-radius:9px;box-shadow:12px 14px 0 #052f364d;overflow:hidden}.canvas-bar{display:flex;align-items:center;gap:4px;padding:10px 12px;border-bottom:1px solid #d9e6e2;background:#f7faf8}.canvas-bar i{width:6px;height:6px;background:#a8c1be;border-radius:50%}.canvas-bar span{margin-left:auto;font-size:8px;color:#537677}.canvas-body{padding:12px 12px 18px}.canvas-body .mini-bars{display:flex;align-items:end;gap:10px;height:91px}.mini-bars i{width:33px;border-radius:3px 3px 0 0;background:#9ed8cc}.mini-bars i:nth-child(1){height:24%}.mini-bars i:nth-child(2){height:52%}.mini-bars i:nth-child(3){height:70%}.mini-bars i:nth-child(4){height:46%}.mini-bars i:nth-child(5){height:86%}.mini-bars i:nth-child(6){height:62%}.canvas-labels{display:flex;justify-content:space-between;font-size:7px;color:#537677;padding:0 2px}.canvas-metrics{display:flex;justify-content:space-between;padding:10px 0 0}.canvas-metrics .metric{display:flex;flex-direction:column;align-items:center;gap:2px}.canvas-metrics .metric strong{font-size:18px}.canvas-metrics .metric small{font-size:8px;color:#537677}.mission-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:25px}.mission-card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:21px 22px 17px;min-height:227px;position:relative;display:flex;flex-direction:column}.mission-card.available{border-color:#168f91;box-shadow:0 0 0 1px #168f9112}.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.mission-symbol{width:37px;height:37px;background:#eef6f2;display:grid;place-items:center;border-radius:9px;color:#167b80}.available .mission-symbol{background:#d8faf1;color:#08767b}.mission-card.locked .mission-symbol{background:#f0f4f1;color:#8ca5a5}.status{font-size:8px;display:inline-flex;align-items:center;gap:4px;color:#829896}.status.available{color:#087b6c;background:#e5f8ef;padding:5px 7px;border-radius:4px;font-weight:600}.status.completed{color:#087b6c}.mission-number{font-size:8px;letter-spacing:1.5px;color:#7b9392;margin-bottom:6px}.mission-card h3{font-size:14px;line-height:1.5;margin:0 0 7px}.mission-card p{font-size:10px;color:var(--muted);line-height:1.65;margin:0}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;border-top:1px solid #edf2ef;padding-top:12px}.card-link{font-size:10px;font-weight:650;color:#147d7e;display:flex;align-items:center;gap:5px}.card-link:after{content:'→'} .mission-card.locked .card-link{color:#8ca5a5;pointer-events:none}.mission-card.locked h3,.mission-card.locked p,.mission-card.locked .mission-number{opacity:.8}.skills{margin-top:28px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:28px 0 16px}.section-heading h2{font-size:17px;margin:0}.section-heading p{font-size:11px;margin:5px 0 0;color:var(--muted)}.skill-list{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;width:100%}.skill{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;min-height:118px}.skill strong{font-size:13px}.skill small{display:block;font-size:7px;color:#718d82;margin-top:2px}.skill.earned{background:#d3f9ea;border-color:#7fcab5}.skill.earned strong{color:#08796c}.skill.earned small{color:#16836a}.skill .badge{display:block;width:25px;height:25px;border-radius:50%;background:#f0f4f2;color:#19191b;display:grid;place-items:center;font-size:14px}.skill.earned .badge{background:#0c7a61;color:#fff}.page-footer{display:flex;justify-content:space-between;gap:15px;font-size:9px;color:#7a9291;margin-top:26px}.page-footer span{display:flex;align-items:center;gap:6px}.link-btn{border:0;background:none;padding:0;color:inherit;text-decoration:underline;text-underline-offset:3px;font-size:inherit}.back{border:0;background:none;color:#557475;font-size:11px;display:inline-flex;gap:7px;align-items:center;padding:0;margin-bottom:20px}.mission-heading{display:flex;gap:20px;justify-content:space-between;align-items:flex-start}.mission-heading h1{font-size:29px;margin:0;letter-spacing:-1.3px}.mission-heading p{font-size:12px;color:var(--muted);margin:0}.mission-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}.panel h2{font-size:17px;margin:0 0 12px}.panel h3{font-size:12px;margin:0 0 10px;color:var(--muted)}.steps{display:flex;flex-direction:column;gap:12px}.step-item{display:flex;gap:10px}.step-number{width:25px;height:25px;border-radius:50%;background:#eafaf6;color:#147a6f;display:grid;place-items:center;font-size:11px;font-weight:700}.step-copy{flex:1}.step-copy h4{margin:0 0 4px;font-size:12px}.step-copy p{margin:0;font-size:10px;color:var(--muted);line-height:1.6}.score-card{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,#dffaf5,#f2fffa);border:1px solid #a9e8d4}.score-card strong{font-size:22px}.score-card span{font-size:10px;color:#43766d}.mission-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.meta-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px}.meta-card h4{margin:0 0 8px;font-size:11px;color:var(--muted)}.meta-card strong{font-size:20px;font-family:'Manrope','Segoe UI',sans-serif}.meta-card small{display:block;font-size:8px;color:#6b8a86}.checklist{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}.checklist li{display:flex;align-items:center;gap:8px;font-size:10px;color:#355d62}.checklist li:before{content:'✓';display:inline-grid;place-items:center;width:18px;height:18px;background:#dffaf3;color:#0a7d69;border-radius:50%;font-weight:700}.@media (min-width:1550px){.content{padding-top:40px}.hero{min-height:315px}.hero-copy{padding:35px 42px}.hero h2{font-size:42px}.mission-card{min-height:240px}.mission-card h3{font-size:16px}.mission-card p{font-size:11px}}@media (max-width:1200px){.shell{grid-template-columns:205px minmax(0,1fr)}.sidebar{width:205px;padding-left:17px;padding-right:17px}.brand{font-size:20px}.content{padding:28px}.topbar{padding:0 28px}.mission-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1.2fr .8fr}.hero-visual{transform:scale(.8);margin-left:-20px;margin-right:-25px}.hero-copy{padding:30px 24px}.hero h2{font-size:34px}}@media (max-width:1000px){.mission-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1.2fr .8fr}.hero-visual{transform:scale(.8);margin-left:-20px;margin-right:-25px}.hero-copy{padding:24px}.skill-list{grid-template-columns:repeat(3,minmax(0,1fr))}.mission-layout{grid-template-columns:1fr}}@media (max-width:760px){.shell{display:block}.sidebar{position:relative;width:100%;padding:18px 20px;display:block}.sidebar-bottom{margin-top:16px}.main-wrap{grid-column:auto}.topbar{padding:0 20px}.content{padding:22px 20px 30px}.page-intro,.hero,.section-heading,.topbar{display:block}.page-intro h1{font-size:26px}.mission-grid,.skill-list{grid-template-columns:1fr}.hero{min-height:auto}.hero-copy{padding:20px}.hero h2{font-size:29px}.hero-visual{display:none}.mission-layout{grid-template-columns:1fr}.mission-heading{flex-direction:column;align-items:flex-start}.page-footer{flex-direction:column;align-items:flex-start}}@media (max-width:390px){.content{padding:22px 15px}.hero h2{font-size:29px}.hero-copy{padding:24px}.hero-note{display:none}.mission-grid{grid-template-columns:1fr}.mission-card{min-height:210px}.skill-list{grid-template-columns:1fr}.page-intro p{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <div id="app"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"></dialog>
+  <script type="module">const STORES = [
+  {id_tienda:'T01',nombre_tienda:'Bogotá Centro',ciudad:'Bogotá',region:'Centro'},
+  {id_tienda:'T02',nombre_tienda:'Medellín Norte',ciudad:'Medellín',region:'Antioquia'},
+  {id_tienda:'T03',nombre_tienda:'Cali Sur',ciudad:'Cali',region:'Pacífico'},
+  {id_tienda:'T04',nombre_tienda:'Barranquilla Mar',ciudad:'Barranquilla',region:'Caribe'}
+];
+const PRODUCTS = [
+  {id_producto:'P01',nombre_producto:'Audífonos',categoria:'Tecnología'},
+  {id_producto:'P02',nombre_producto:'Teclado',categoria:'tecnologia'},
+  {id_producto:'P03',nombre_producto:'Mouse',categoria:'TECNOLOGÍA'},
+  {id_producto:'P04',nombre_producto:'Lámpara',categoria:'Hogar'},
+  {id_producto:'P05',nombre_producto:'Organizador',categoria:' hogar '},
+  {id_producto:'P06',nombre_producto:'Botella',categoria:'Bienestar'},
+  {id_producto:'P07',nombre_producto:'Colchoneta',categoria:'bienestar'},
+  {id_producto:'P08',nombre_producto:'Libreta',categoria:'Papelería'}
+];
+const prices=[95000,160000,65000,120000,45000,38000,85000,22000];
+const clone = value => JSON.parse(JSON.stringify(value));
+function createDataset(){
+  const pedidos=Array.from({length:240},(_,i)=>{
+    const s=i%4,p=(i*7+Math.floor(i/11))%8;
+    return {id_pedido:`N${String(i+1).padStart(4,'0')}`,fecha:`2026-${String(1+Math.floor(i/40)).padStart(2,'0')}-${String(1+i%27).padStart(2,'0')}`,id_tienda:STORES[s].id_tienda,id_producto:PRODUCTS[p].id_producto,cantidad:1+((i*13)%5),precio_unitario:prices[p],descuento:0.04+((i*7)%9)*0.015};
+  });
+  pedidos[2]={...pedidos[1],id_pedido:'N0003'};
+  pedidos[12].cantidad=null;
+  [20,61,102,143].forEach(i=>{const [y,m,d]=pedidos[i].fecha.split('-');pedidos[i].fecha=`${d}/${m}/${y}`;});
+  pedidos[48].cantidad=999;
+  pedidos.splice(8,0,clone(pedidos[7]));
+  const devoluciones=Array.from({length:22},(_,i)=>({id_devolucion:`D${String(i+1).padStart(3,'0')}`,id_pedido:`N${String(5+i*9).padStart(4,'0')}`,cantidad_devuelta:1,motivo:['Cambio de talla','Defecto','No solicitado','Error de entrega'][i%4],valor_devuelto:Math.round((i+1)*18000)}));
+  return {Pedidos:pedidos,Productos:clone(PRODUCTS),Tiendas:clone(STORES),Devoluciones:devoluciones};
+}
+const ORIGINAL=createDataset();
+const RECEIPTS={N0013:4,N0049:9};
+const METRICS={
+  neto:{label:'Ingresos netos',unit:'COP',formula:'Σ cantidad × precio_unitario × (1 − descuento)'},
+  bruto:{label:'Ingresos brutos',unit:'COP',formula:'Σ cantidad × precio_unitario'},
+  descuentos:{label:'Descuentos',unit:'COP',formula:'Σ cantidad × precio_unitario × descuento'},
+  cantidad:{label:'Unidades vendidas',unit:'unidades',formula:'Σ cantidad'},
+  pedidos:{label:'Pedidos',unit:'pedidos',formula:'Número de pedidos válidos'},
+  devueltas:{label:'Unidades devueltas',unit:'unidades',formula:'Σ cantidad_devuelta; vínculo por id_pedido'}
+};
+function normalizeCategory(s){const v=String(s).trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');return {tecnologia:'Tecnología',hogar:'Hogar',bienestar:'Bienestar',papeleria:'Papelería'}[v] ?? v.charAt(0).toUpperCase()+v.slice(1);} 
+function diagnose(data){
+  const seen=new Set();let duplicates=0;
+  for(const r of data.Pedidos){if(seen.has(r.id_pedido))duplicates++;seen.add(r.id_pedido);}
+  return {duplicates,missing:data.Pedidos.filter(r=>r.cantidad===null).length,dates:data.Pedidos.filter(r=>!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(r.fecha)).length,categories:data.Productos.filter(r=>r.categoria!==normalizeCategory(r.categoria)).length};
+}
+const TRANSFORMS={
+  duplicates:{title:'Verificar duplicado por ID',description:'Conservar una copia del pedido N0008, idéntico en todos sus campos. N0002 y N0003 se conservan: tienen IDs distintos.',key:'duplicate'},
+  missing:{title:'Recuperar el valor faltante',description:'El comprobante sintético de N0013 confirma 4 unidades. Recuperar por ID; no sustituir todos los faltantes por cero.',key:'missing'},
+  dates:{title:'Unificar fechas',description:'Las cuatro fechas DD/MM/AAAA se interpretan según la convención documentada del archivo y se convierten a AAAA-MM-DD.',key:'dates'},
+  categories:{title:'Normalizar categorías',description:'Aplicar el catálogo aprobado: Tecnología, Hogar, Bienestar y Papelería. Se modifican etiquetas, no ventas.',key:'categories'},
+  outliers:{title:'Contrastar el valor atípico',description:'N0049 tiene 999 unidades. El comprobante sintético confirma 9: corregir con evidencia, conservando el registro.',key:'outliers'}
+};
+function transform(data,type){
+  if(!TRANSFORMS[type])throw new Error('Transformación desconocida');
+  const next=clone(data),changes=[];
+  if(type==='duplicates'){
+    const seen=new Map();next.Pedidos=next.Pedidos.filter(r=>{const old=seen.get(r.id_pedido);if(old&&JSON.stringify(old)===JSON.stringify(r)){changes.push({id:r.id_pedido,antes:'2 copias idénticas',despues:'Se conserva 1 registro'});return false;}seen.set(r.id_pedido,r);return true;});
+  }
+  if(type==='missing'||type==='outliers')for(const r of next.Pedidos){if((type==='missing'&&r.cantidad===null)||(type==='outliers'&&r.cantidad>100)){const n=RECEIPTS[r.id_pedido];if(n!==undefined){changes.push({id:r.id_pedido,antes:r.cantidad,despues:n});r.cantidad=n;}}}
+  if(type==='dates')for(const r of next.Pedidos){if(/^\d{2}\/\d{2}\/\d{4}$/.test(r.fecha)){const [d,m,y]=r.fecha.split('/');changes.push({id:r.id_pedido,antes:r.fecha,despues:`${y}-${m}-${d}`});r.fecha=`${y}-${m}-${d}`;}}
+  if(type==='categories')for(const r of next.Productos){const n=normalizeCategory(r.categoria);if(n!==r.categoria){changes.push({id:r.id_producto,antes:r.categoria,despues:n});r.categoria=n;}}
+  return {data:next,changes};
+}
+const totalIssues = data => Object.values(diagnose(data)).reduce((a,b)=>a+b,0);
+function calculate(data,{metric='neto',dimension='tienda',operation='suma'}={}){
+  const groups=new Map();let excluded=0;
+  const returns=new Map();for(const r of data.Devoluciones)returns.set(r.id_pedido,(returns.get(r.id_pedido)||0)+r.cantidad_devuelta);
+  for(const r of data.Pedidos){
+    if(r.cantidad===null||r.cantidad===undefined||r.cantidad<0){excluded++;continue;}
+    const key = data.Tiendas.find(t=>t.id_tienda===r.id_tienda)?.[dimension] || r[dimension] || 'Sin dimensión';
+    const product = data.Productos.find(p=>p.id_producto===r.id_producto);
+    const quantity = Number(r.cantidad) || 0;
+    const base = quantity * Number(r.precio_unitario || 0);
+    const desc = base * Number(r.descuento || 0);
+    const net = base - desc;
+    const entry = groups.get(key) || {bruto:0,neto:0,descuentos:0,cantidad:0,pedidos:0,devueltas:0};
+    entry.bruto += base;
+    entry.neto += net;
+    entry.descuentos += desc;
+    entry.cantidad += quantity;
+    entry.pedidos += 1;
+    entry.devueltas += returns.get(r.id_pedido) || 0;
+    groups.set(key,entry);
+  }
+  const values = [...groups.entries()].map(([label,values])=>({label,...values}));
+  return {values,excluded,metric};
+}
+const app = document.getElementById('app');
+if(app){app.innerHTML = '<div class="shell">...</div>'};
+</script>
+</body>
+</html>
